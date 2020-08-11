@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Mar 11 Août 2020 à 20:04
+-- Généré le :  Mar 11 Août 2020 à 20:59
 -- Version du serveur :  5.5.62-0+deb8u1
 -- Version de PHP :  5.6.40-0+deb8u12
 
@@ -19,6 +19,8 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `CCC`
 --
+CREATE DATABASE IF NOT EXISTS `CCC` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE `CCC`;
 
 -- --------------------------------------------------------
 
@@ -32,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `Batterie` (
   `Sol2` float NOT NULL,
 `ID` int(11) NOT NULL,
   `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=MyISAM AUTO_INCREMENT=342422 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=342445 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -149,7 +151,7 @@ CREATE TABLE IF NOT EXISTS `Conso` (
   `Rend_jour` float NOT NULL,
   `Rend_hier` float NOT NULL,
   `P_max_hier` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=174559 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=174582 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -553,7 +555,7 @@ ALTER TABLE `temp_maison8`
 -- AUTO_INCREMENT pour la table `Batterie`
 --
 ALTER TABLE `Batterie`
-MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=342422;
+MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=342445;
 --
 -- AUTO_INCREMENT pour la table `BatterieP`
 --
@@ -583,7 +585,7 @@ MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=34;
 -- AUTO_INCREMENT pour la table `Conso`
 --
 ALTER TABLE `Conso`
-MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=174559;
+MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=174582;
 --
 -- AUTO_INCREMENT pour la table `Eau`
 --
@@ -672,3 +674,4 @@ MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
